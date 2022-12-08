@@ -19,7 +19,14 @@ pipeline {
         stage("Second step") {
             steps {
                 sh 'ssh ub1 \'uptime\''
-           
+           }
+        }     
+                
+         stage("Third step") {
+            steps {
+                sh 'ssh ub1 \'uptime\''
+                
+                
         }
     }
 }
