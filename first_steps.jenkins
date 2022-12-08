@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Third step") {
             steps {
-                sh 'ssh ub1 \'hostname\''
+                sh 'ssh ub1 \'echo "Привет Кишик"\''
             }
         }
         }
