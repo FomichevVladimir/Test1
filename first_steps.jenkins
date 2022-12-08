@@ -21,7 +21,7 @@ pipeline {
                 sh 'ssh ub1 \'uptime\''   
                  }
         }
-        stage("First step") {
+        stage("Third step") {
             steps {
                 sh 'ssh ub1 \'hostname\''
             }
