@@ -1,5 +1,4 @@
-FROM alpine
-RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python py-pip bash && \
-    pip install awscli
-RUN apk --purge -v del py-pip
-CMD tail -f /dev/null
+FROM ubuntu:20.04
+RUN apt-get update
+RUN apk-get install -y mysql
+CMD echo "Первый контейнер пошел"
