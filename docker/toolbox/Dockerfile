@@ -1,4 +1,3 @@
-FROM ubuntu:20.04
-RUN apt-get update
-RUN apt-get install nginx
-CMD y
+FROM apline
+RUN apk update
+CMD echo "Alpine test"
